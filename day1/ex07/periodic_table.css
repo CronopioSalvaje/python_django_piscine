@@ -1,0 +1,36 @@
+*
+{
+	margin:0;
+	padding:0
+}
+
+body
+{
+	font-size: 12px;
+}
+
+h4
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
+table
+{
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+td
+{
+	width: var(100/18)'%';
+}
+
+li
+{
+	font-size: 0.7rem;
+	list-style: none;
+	position: relative;
+	left:7px
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrap">
+        <input type="text" id="firstname" placeholder="firstname">
+    </div>
+    <div class="wrap">
+        <input type="text" id="name" placeholder="name">
+
+    </div>
+    <div class="wrap">
+        <input type="tel" id="phone" placeholder="you phone number">
+
+    </div>
+    <div class="wrap">
+        <input type="number" id="age" min="0" max="120" placeholder="age">
+
+    </div>
+    <div class="wrap">
+        <input type="email" id="email" placeholder="your email">
+
+    </div>
+
+    <div class="check">
+        <div class="gender">Gender</div>
+        <label for="gender_male">Male</label>
+        <input type="checkbox" value="Male" id="gender_male" >
+        <label for="gender_female">Female</label>
+        <input type="checkbox" value="Female" id="gender_female" >
+        <label for="gender_other">Other</label>
+        <input type="checkbox" value="Other" id="gender_other" checked="true">
+
+    </div>
+    <label for="student">Student at 42</label>
+    <input type="checkbox" id="student">
+    <br>
+    <input type="button" onclick="displayFormContents()" value="Submit">
+    <script src="popup.js"></script>    
+</body>
+</html>
