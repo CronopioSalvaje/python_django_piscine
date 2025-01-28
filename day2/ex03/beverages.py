@@ -58,18 +58,3 @@ class Coffee(HotBeverage):
 
     def description(self):
         return "A coffee, to stay awake."
-
-
-def main():
-    coffee = Coffee()
-    print(coffee.__str__())
-    tea = Tea()
-    print(tea.__str__())
-    capuccino = Capuccino()
-    print(capuccino.__str__())
-    chocolate = Chocolate()
-    print(chocolate.__str__())
-
-
-if __name__ == "__main__":
-    main()
