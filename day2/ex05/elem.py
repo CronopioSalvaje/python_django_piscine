@@ -113,32 +113,3 @@ class Elem:
                                                 for elem in content])))
 
 
-if __name__ == "__main__" :
-    elem = Elem(tag='body', attr={}, content=Elem(),
-                    tag_type='double')
-    print (elem.__str__())
-
-
-     # Default behaviour :
-    elem = Elem() # == '<div></div>'
-    print ("1\n" + elem.__str__())
-    # Arguments order :
-    elem = Elem('div', {}, None, 'double') # == '<div></div>'
-    print ("2\n" + elem.__str__())
-    # Argument names :
-    elem = Elem(tag='body', attr={}, content=Elem(),
-                    tag_type='double') #== '<body>\n  <div></div>\n</body>'
-    print ("3\n" + elem.__str__())
-    # With elem as content :
-    elem = Elem(content=Elem())#== '<div>\n  <div></div>\n</div>'
-    print ("4\n" + elem.__str__())
-    # With list as content :
-    elem = Elem(content=[Text('foo'), Text('bar'), Elem()])# == '<div>\n  foo\n  bar\n \
-# <div></div>\n</div>'
-    print ("5\n" + elem.__str__())
-    elem = Elem(content=Elem(content=Elem(content=Elem())))
-    print ("6\n" + elem.__str__())
-    elem = Elem(content=[Text(''), Text('')])
-    print ("7\n" + elem.__str__())
-
-    elem = Elem(content='')
