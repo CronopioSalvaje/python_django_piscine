@@ -1,0 +1,36 @@
+<p>"-Who are you?
+-A {name}!"</p>
+<p>"-How old are you?
+-A {age}!"</p>
+<p>
+-A {test}</p>
+
+  <header>
+        <h1>CV {name}</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Formation</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>{form1date}</td>
+            <td>{form1txt}</td>
+        </tr>
+        <thead>
+            <tr>
+                <th>Experience</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>{form2date}</td>
+                <td>{form2txt}
+                </td>            
+            </tr>
+            <tr>
+                <td>{form3date}</td>
+                <td>{form3txt}
+                </td>           
+            </tr>
+    </table>
